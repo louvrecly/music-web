@@ -1,0 +1,7 @@
+.logout-div {
+    margin: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}

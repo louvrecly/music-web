@@ -1,0 +1,147 @@
+.profile-content:before {
+    content: "";
+    position: fixed;
+    top: 60px;
+    left: -5%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+    display: block;
+    background-image: url('../../resources/6212452191_0d8a15e2b5_o.jpg');
+    background-size:cover;
+    
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.profile-content {
+    overflow: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    margin-top: 5px;
+}
+
+.player-info-row {
+    padding-left: 5px;
+}
+
+.profile-head-row {
+    padding: 5px;
+}
+
+.profile-head, .player-info, .band-instrument-info, .album-song-info {
+    padding: 10px;
+    background-color: #000000;
+    color: #eeeeee;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.profile-head:hover, .player-info:hover, .band-instrument-info:hover, .album-song-info:hover {
+    opacity: 0.9;
+}
+
+.profile-head h1 {
+    margin: 0;
+}
+
+.player-info {
+    padding: 20px 10px;
+    margin: 5px 0;
+}
+
+.music-info {
+    padding: 0 0 0 5px!important;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.band-instrument-info, .album-song-info {
+    flex: 1;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+.band-instrument-info h4, .album-song-info h4 {
+    margin: 0;
+}
+
+.player-info, .player-img-form, .player-info-form {
+    background-color: #000000;
+    opacity: 0.8;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-div {
+    height: 200px;
+    width: 200px;
+    margin: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.img-control {
+    display: flex;
+}
+
+.img-browse {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: .25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-weight: normal;
+}
+
+.img-file {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+}
+
+.msg-info, .player-name, .player-gender, .player-age {
+    text-align: center;
+    background-color: transparent!important;
+    color: #eeeeee!important;
+    border-color: transparent!important;
+}
+
+.player-name, .player-gender, .player-age {
+    margin: 15px 0;
+}
+
+.player-name.edit-name {
+    border-color: #eeeeee!important;
+}
+
+.img-browse, .img-upload, .edit-save {
+    margin: 15px 0;
+    padding: 0.375rem 1.5rem!important;
+    flex: 1;
+}
+
+.edit-save {
+    border-radius: 1.25rem!important;
+}

@@ -1,0 +1,40 @@
+.mainContent:before {
+    content: "";
+    position: fixed;
+    top: 8%;
+    left: -5%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+    display: block;
+    background-image: url('../../resources/6212452191_0d8a15e2b5_o.jpg');
+    background-size:cover;
+    /* width: 100;
+    height: 100; */
+    
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.mainContent {
+    overflow: auto;
+    position: relative;
+  }
+
+  .memberInformation, .resInformation, .bandInformation, .bandRoom, .trackData, .midiData{
+    padding: 0.3em!important;
+    border-bottom: 1px solid gray;
+}
+
+.bandName{
+    color: #ff790d;
+}
+
+.play, .trackName, .midiData{
+    display: flex;
+    align-items: center;
+}

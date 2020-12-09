@@ -1,0 +1,124 @@
+/* .auth-form-content:before {
+    content: "";
+    position: fixed;
+    top: 60px;
+    left: -5%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+    display: block;
+    background-image: url('../../resources/6212452191_0d8a15e2b5_o.jpg');
+    background-size:cover;
+    
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+} */
+
+.auth-form-content {
+    overflow: auto;
+    position: relative;
+    margin-left: 250px
+}
+
+.auth-form {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card.auth-card {
+    width: 380px;
+    height: 450px;
+    background-color: #000000;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.auth-card:hover {
+    opacity: 0.9;
+}
+
+.auth-card-header, .auth-card-body, .auth-card-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.auth-card-body {
+    flex-flow: column nowrap;
+    padding: 1.25rem 2.5rem;
+}
+
+.auth-card-header .nav-tabs, .auth-card-header .nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+input.auth-form-username, input.auth-form-password {
+    background-color: #000000;
+    color: #dddddd;
+}
+
+input.auth-form-username:hover, input.auth-form-password:hover {
+    background-color: #111111;
+    color: #eeeeee;
+}
+
+input.auth-form-username:focus, input.auth-form-password:focus {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.auth-card-submit {
+    width: 120px;
+}
+
+.alert {
+    padding: .75rem 0.5rem;
+}
+
+.alert svg {
+    margin: 5px;
+}
+
+/* #background-video{
+
+    height: 100%;
+    width: 100%;
+    float: left;
+    top: 0;
+    padding: none;
+} */
+
+.video-header{height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+	
+}
+
+.wrap{
+	max-width: 960px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin:auto;
+	text-align: center;
+	
+}
+.fullscreen-video-wrap{
+	position: absolute;
+	top: 64px;
+	left: 0;
+	height: 100vh;
+    width: 100%;
+    
+}
+.fullscreen-video-wrap video{
+	min-height: 100%;
+	min-width: 100%;
+	
+}

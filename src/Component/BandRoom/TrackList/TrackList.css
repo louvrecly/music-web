@@ -1,0 +1,161 @@
+.track-list-container {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.track-list-title {
+    flex: 1;
+}
+
+.export-instrument {
+    width: min-content;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.export-instrument-label {
+    white-space: nowrap;
+    margin: 0;
+}
+
+.export-instrument-select {
+    width: max-content!important;
+    margin: 0 5px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.instrument-class, .instrument-option {
+    background-color: transparent!important;
+    color: #aaaaaa!important;
+    max-width: 90px;
+    min-width: 70px;
+    padding: 0 10px!important;
+    height: 1.75rem!important;
+}
+
+/* track list scrollbar starts */
+.track-list-scroll {
+    flex: 1 1;
+    float: left;
+    background: transparent;
+    overflow-y: scroll;
+    margin: 5px 0;
+    /* max-height: 130px; */
+}
+
+.track-list-scroll::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: #111111;
+    border-radius: 50% / 1%;
+}
+
+.track-list-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #222222;
+}
+
+#track-data.force-overflow {
+    max-height: 150px;
+}
+/* track list scrollbar ends */
+
+.track-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.track-list-item {
+    white-space: nowrap;
+    color: #cccccc;
+    transition: 0.5s;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.track-list-item:hover {
+    color: #ffffff;
+}
+
+.select-track-button {
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 0!important;
+    margin: 5px;
+    border-radius: 50%!important;
+    border-width: thick!important;
+}
+
+button.remove-track-button, button.play-track-button, button.export-track-button {
+    border-radius: 50%!important;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-name, .midi-name {
+    background-color: transparent!important;
+    color: #eeeeee!important;
+}
+
+
+.track-name {
+    flex: 1 1;
+    margin: 0 5px;
+}
+
+.midi-name {
+    width: 40%!important;
+    min-width: 80px;
+    margin: 0 5px 0 auto;
+}
+
+
+.compose-instrument {
+    margin: 0 5px;
+}
+
+/* track item scrollbar starts */
+.track-item-scroll {
+    display: none;
+    float: left;
+    background: transparent;
+    overflow-x: scroll;
+    flex: 1;
+    margin: 5px;
+}
+
+.track-item-scroll::-webkit-scrollbar {
+    /* height: ; */
+    background-color: #111111;
+    border-radius: 25rem / 20rem;
+}
+
+.track-item-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #222222;
+}
+/* track item scrollbar ends */
+
+.track-list-control {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.master-select-button, .export-midi-button {
+    margin: 0 5px;
+}

@@ -1,0 +1,13 @@
+.enterRoom{
+        color: #dddddd;
+}
+
+.enterRoom:hover{
+    color: #dddddd;
+    text-decoration: none
+}
+
+.studioList{
+    max-height: 300px;
+    overflow-y: scroll
+}

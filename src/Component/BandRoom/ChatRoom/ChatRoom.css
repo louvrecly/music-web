@@ -1,0 +1,353 @@
+.chatBody {
+    background: #222222;
+    padding-left: 0;
+}
+
+.chatRow {
+    height: stretch;
+    display: flex;
+    min-width: 270px;
+    flex: 1;
+}
+
+/* .chatRoomCol {
+    height: calc(100vh - 66px);
+} */
+
+.chatRoomExt {
+    background: #222222;
+    /* min-width: 270px; */
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.chatControl {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #222222;
+}
+
+.invitation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.invitationMe {
+    display: none;
+}
+
+.chatInput {
+    line-height: 2em;
+    /* height: 2.5em; */
+    width: initial;
+    min-width: unset;
+    text-align: center;
+    border: medium solid #555555;
+    border-radius: 2em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.chatInput:focus {
+    border-radius: 2em;    
+}
+
+.chatButton {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invitationAdd {
+    color: #999999;
+    border-color: #999999;
+}
+
+.contact-list {
+    flex: 1;
+    margin-left: 10px;
+    /* margin-right: 10px; */
+}
+
+.chatRoomDoor {
+    padding: .5rem 0.75rem!important;
+    cursor: pointer;
+    background: #111111;
+    color: white;
+    transition: 0.5s;
+    display: flex!important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chatRoomDoor:hover {
+    background: #222222;
+    border-color: #dddddd;
+    color: #dddddd;
+}
+
+.chatRoomDoor:active, .chatRoomDoor:focus {
+    background: #007bff;
+    border-color: #dddddd;
+    color: #dddddd;
+}
+
+.chatListScroll {
+    float: left;
+    background: transparent;
+    overflow-y: scroll;
+    flex: 1;
+    margin: 5px 5px 10px 5px;
+}
+
+.chatListScroll::-webkit-scrollbar {
+    width: 0.5rem;
+    /* width: 12px; */
+    background-color: #111111;
+    border-radius: 50% / 1%;
+}
+
+.chatListScroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #222222;
+}
+
+.chatRoomInt {
+    background: #000000;
+    flex: 3;
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 270px;
+}
+
+.chatRoomHead {
+    background: #0dad3d;
+    position: static;
+    z-index: 1030;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bandPhoto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
+
+    display: none;
+}
+
+.bandName {
+    flex: 1;
+    color: #eeeeee;
+}
+
+.bandProfile {
+    font-size: 0.9em;
+    border-color: #cccccc;
+    width: max-content;
+    display: none;
+}
+
+.join {
+    display: none;
+}
+
+.convoLog {
+    flex: 1;
+    display: block!important;
+}
+
+.convoScroll {
+    /* float: left; */
+    background: transparent;
+    overflow-y: scroll;
+    /* flex: 1 1; */
+    margin: 10px 5px 10px 5px;
+    /* max-height: 150px; */
+    height: 100%;
+}
+
+.convoScroll::-webkit-scrollbar {
+    width: 0.5rem;
+    /* width: 12px; */
+    background-color: #111111;
+    border-radius: 50% / 1%;
+}
+
+.convoScroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #222222;
+}
+
+.dialog {
+    padding: 0!important;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#dialog.force-overflow {
+    max-height: 150px;
+}
+
+/* CSS speech bubble */
+/* https://leaverou.github.io/bubbly/ */
+/* https://codingislove.com/css-speech-bubbles/ */
+
+
+.myDialog, .friendsDialog {
+    padding: 5px 10px;
+}
+
+.myDialog:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color: #0dad3d;
+	border-bottom: 0;
+	margin-left: -10px;
+	margin-bottom: -10px;
+}
+
+.friendsDialog:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+	margin-left: -10px;
+	margin-bottom: -10px;
+}
+
+
+.myDialog:hover {
+    opacity: 1;
+}
+
+.friendsDialog:hover {
+    opacity: 1;
+}
+
+.myDialog {
+    align-self: flex-end;
+    background: #0dad3d;
+    max-width: 75%;
+    margin: 10px;
+    display: inline-block;
+    opacity: 0.8;
+    position: relative;
+    /* background: darkblue; */
+    color: #ffffff;
+    border-radius: .4em;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width:150px
+    
+}
+
+
+.myDialog::after {
+    right: 10px;
+	border-right: 0;
+}
+
+.friendsDialog {
+    align-self: flex-start;
+    background: white;
+    max-width: 75%;
+    margin: 10px;
+    display: inline-block;
+    opacity: 0.8;
+    position: relative;
+    /* background: darkblue; */
+    color: black;
+    border-radius: .4em;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width:150px
+}
+
+.friendsDialog::after {
+    left: 20px;
+    border-left: 0;
+}
+
+.myDialog p, .friendsDialog p {
+    margin: 2px;
+    word-break: break-word;
+}
+
+.communicationForm {
+    position: static;
+    z-index: 1030;
+}
+
+.send {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.sendRoom {
+    display: none;
+}
+
+.sendMessage {
+    text-align: start;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.timeStamp{
+    font-size: 10px;
+    text-align: end;
+    opacity: 0.6;
+    font-weight: normal
+}
+
+.speakerName{
+    font-size: 14px
+}
+
+.chatBackground{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through*/
+    color: #DBDBDB;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 200;
+    /* border: 3px solid #f1f1f1; */
+}
+
+@media only screen and (max-width: 940px) {
+    .chatRoomExt {
+        display: none;
+    }
+}

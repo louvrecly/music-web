@@ -1,0 +1,54 @@
+.instrument {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.magenta {
+    padding: 0!important;
+}
+
+.instrument-control-panel {
+    height: calc(2rem + 20px);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instrument-control {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.instrument-indicators {
+    margin: 0 5px;
+}
+
+.instrument-indicator {
+    padding: 5px 20px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.instrument-prev, .instrument-next {
+    border: none!important;
+    font-size: 1rem!important;
+    
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%!important;
+    padding: 0!important;
+    margin: 5px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,102 @@
+.midi-list-container {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+button.clear-midi-list, button.play-button {
+    border-radius: 50%!important;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.7rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midi-list-table {
+    text-align: center;
+    flex: 1 1;
+    padding: 0;
+}
+
+.midi-header-row, .midi-data-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.midi-header-col, .midi-data-col {
+    flex: 1;
+}
+
+.midi-list-header {
+    border-top: #cccccc;
+    border-bottom: #cccccc;
+}
+
+.play-with-ai {
+    margin: 0 10px;
+}
+
+/* midi list scrollbar starts */
+.midi-list-scroll {
+    width: 100%;
+    /* flex: 1 1; */
+    /* float: left; */
+    background: transparent;
+    overflow-y: scroll;
+    height: calc(100% - 3.5rem);
+    margin: 10px 0;
+    /* max-height: 150px; */
+}
+
+.midi-list-scroll::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: #111111;
+    border-radius: 50% / 1%;
+}
+
+.midi-list-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #222222;
+}
+
+#midi-data.force-overflow {
+    max-height: 150px;
+}
+
+/* midi list scrollbar ends */
+
+.midi-list-control {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.midi-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.midi-list-item {
+    /* overflow-wrap: break-word; */
+    word-break: break-word;
+    color: #cccccc;
+    transition: 0.5s;
+}
+
+.midi-list-item:hover {
+    color: #ffffff;
+}
+
+.mono-poly-btn-group {
+    margin: 0 1rem;
+}
+
+button.mono-btn, button.poly-btn {
+    font-size: 0.7rem;
+    width: 60px;
+}
